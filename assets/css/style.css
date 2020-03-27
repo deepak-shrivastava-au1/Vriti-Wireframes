@@ -1,0 +1,134 @@
+
+body {
+	background: ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    line-height: 24px;
+}
+
+strong { font-weight: 700; }
+
+a, a:hover, a:focus {
+	color: gray;
+	text-decoration: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+h1, h2 {
+	margin-top: 10px;
+	font-size: 36px;
+    font-weight: 700;
+    color: black;
+    line-height: 44px;
+}
+
+
+
+
+/***** Top menu *****/
+
+/***** Description *****/
+
+.description-container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.description-title { padding-bottom: 10px; }
+.description-text { opacity: 0.8; }
+
+.description-text a { color: gray; border: 0; }
+.description-text a:hover,
+.description-text a:focus { color: gray; border-bottom: 1px dotted gray; }
+
+.description-text .divider-1 { margin-top: 50px; }
+
+
+/***** Multi Step Form *****/
+
+.msf-container { padding-bottom: 80px; text-align: center; }
+
+.msf-title h3 { padding-bottom: 10px; font-weight: 700; }
+.msf-title p { opacity: 0.8; }
+
+.msf-form h4 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.msf-form h4 .step { color: #aaa; }
+
+.msf-form form fieldset { display: none; overflow: hidden; }
+
+.msf-form form input[type="text"] { width: 400px; margin-left: 5px; margin-right: 5px; }
+
+
+.msf-form form textarea.form-control { width: 700px; height: 160px; }
+
+.msf-form form select.form-control { width: 400px; margin-left: 5px; margin-right: 5px; }
+
+.msf-form form .form-group { margin-bottom: 15px; }
+
+.msf-form form button.btn { min-width: 110px; margin-top: 15px; margin-left: 5px; margin-right: 5px; }
+
+.msf-form form p { opacity: 0.8; }
+
+.msf-form form .radio-buttons-1,
+.msf-form form .radio-buttons-2,
+.msf-form form .checkboxes-1,
+.msf-form form .checkboxes-2 { display: inline-block; margin: 0 15px 20px 15px; }
+
+.msf-form form .selects-1,
+.msf-form form .selects-2 { display: inline-block; margin: 0 0 20px 0; }
+.form-group select{
+	height: 40px;
+	width: 200px;
+	background:white;
+	color: gray;
+	text-align: center;
+}
+#birth-date{height: 40px; width: 400px; background: white; padding: 10px;margin-left: 5px; margin-right: 5px;}
+
+.expDropdown{
+	font-weight: 800; 
+	color: gray; 
+	margin-top: 20px;
+	background: white;
+
+}
+.employment_type{
+	width: 400px !important;
+	margin-left: 5px; margin-right: 5px;
+}
+.form-group input{width: 150px; background: white; border: none; border-bottom: 1px solid gray; height: 40px; color: gray; padding: 10px; }
+
+.Job-role{margin-left: -100px; padding-top: 20px;}
+input#social-facebook.Job-role {
+    margin-left: -20px;
+    margin-top: 0px;
+    height: 117px;
+    overflow: auto;
+}
+
+h6.from {
+    float: left;
+}
+
+h6.to {
+    /* float: right; */
+    display: contents;
+}
+div#timeperiod {
+	margin-top: 30px;
+	margin-right: -14px;
+}
+#working{margin-top: 15px;}
+label.Job-role {float: inherit;margin-left: -16px;}
+
+#timeperiod label {
+    margin-left: 31px;
+}
