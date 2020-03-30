@@ -144,14 +144,81 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-6 form-group">
-                                <label for="salary">Salary(Leave empty if it's negotiable)</label>
-                                <input id="salary" name="salary" type="number" min="1000" class="form-control" value="0">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <label for="salary">Salary(Leave empty if it's negotiable)</label>
+                                        <input id="salary" name="salary" type="number" min="1000" class="form-control" value="0">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="salary">Currency</label><br>
+                                        <select class="form-control" >
+                                            <option>USD $</option>
+                                            <option>USD $</option>
+                                            <option>USD $</option>
+                                            <option>USD $</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-lg-6 form-group">
-                                <label for="experience">Experience</label>
-                                <input id="experience" name="experience" type="text" min="0" class="form-control" value="0">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label for="experience">Experience</label>
+                                    </div>
+                                    <div class="col-sm-4">  
+                                        <label for="salary">Min</label>                                    
+                                        <select class="form-control" >
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label for="salary">Max</label>
+                                        <select class="form-control" >
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="education">Education</label>
+                                <select class="form-control" id="education" name="education" type="text" multiple>
+                                    <option>MBA</option>
+                                    <option>B Tech/BE</option>
+                                    <option>B Tech/BE</option>
+                                    <option>B Tech/BE</option>
+                                    <option>B Tech/BE</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="skills">Skills</label>
+                                <select class="form-control"  multiple>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                    <option>React.js</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for = "primary_skills">Primary Skills</label>
+                                <input type="text"  class="form-control" >
+                            </div>
+                        </div>
+                        <br>
                         <div class="row">
                             <div class="col-lg-6 form-group">
                                 <label for="location">Location</label>
@@ -246,10 +313,16 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-12 text-center">
+                            <div class="col-lg-6 text-right">
                                 <hr>
                                 <button type="submit" class="btn btn-outline-white-primary"><i class="fa fa-magic"></i>
-                                    Save and publish
+                                    Save and Draft
+                                </button>
+                            </div>
+                            <div class="col-lg-6 text-left">
+                                <hr>
+                                <button type="submit" class="btn btn-outline-white-primary"><i class="fa fa-magic"></i>
+                                    Save and Publish
                                 </button>
                             </div>
                         </div>
