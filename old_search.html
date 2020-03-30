@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -32,7 +34,7 @@
           id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="./static/css/custom.css">
-   
+    
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -64,7 +66,7 @@
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
-                   
+                    
                         <li class="nav-item dropdown">
                             <a id="clientZone" href="#" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false"
@@ -74,24 +76,24 @@
                                         <img src="./static/img/target.png">
                                     </div>
                                 </div>
-                               
+                                
                                     Deepak Shrivastava
-                               
+                                
                             </a>
                             <div aria-labelledby="clientZone" class="dropdown-menu">
                                 <a href="edit-profile.html" class="dropdown-item">Edit Profile</a>
                                 <a href="#" class="dropdown-item">Logout</a>
                             </div>
                         </li>
-                   
+                    
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 <div>
-   
-   
+    
+    
 
     <section class="job-form-section job-form-section--compressed">
         <div class="container">
@@ -166,7 +168,7 @@
                                         </div>
                                     </div>
                                         <div class="col-md-3">
-                                        <div class="form-group">                                          
+                                        <div class="form-group">                                           
                                             <!-- <input class="dropbtn" type="text" id="experience" name="experience"
                                                    placeholder="&emsp;Experience" class=""> -->
                                                 <select name="experience" id="experience"   class="dropbtn">Experience
@@ -195,14 +197,14 @@
                                               margin-left: -1.3em;
                                               padding-left: 1.2em;
                                               color: gray;
-                                             
+                                              
                                             }
                                             @media screen and (max-width: 415px){
                                                 .dropbtn{
                                                     width: 17em;
                                                     float: right;
                                                 }
-                                            }
+                                            } 
                                             </style>
                                     </div>
                                     <div class="col-md-2">
@@ -337,7 +339,7 @@
     .progress.blue .progress-left .progress-bar{
         animation: loading-2 1.5s linear forwards 1.8s;
     }
- 
+  
     @keyframes loading-1{
         0%{
             -webkit-transform: rotate(0deg);
@@ -391,7 +393,7 @@
     @media only screen and (max-width: 990px){
         .progress{ margin-bottom: 20px; }
     }
-   
+    
     </style>
          <!-- progress bar styles ends here -->
     <div class="job_listing_area">
@@ -408,7 +410,7 @@
                            <div class = "col-sm-8">
                             <div class="jobs_left d-flex align-items-center">
                                 <div class="logo">
-                                    <input id="applyall1" style="height: 20px; width: 20px;" type="checkbox" class="applyall">
+                                    <input id="applyall" style="height: 20px; width: 20px;" type="checkbox" class="applyall">
                                 </div>
                                 <div class="logo">
                                     <img  style="height: 30px; width: 120px;margin-left: 10px;" src="static/img/Marktine.gif" alt="">
@@ -481,16 +483,16 @@
                                                       </div>
                                                     </div>
                                                    </form>                              
-                                                </span>  
-                                              </div>  
+                                                </span>   
+                                              </div>   
                                           <a href="#" class="fa fa-facebook"></a>
                                           <a href="#" class="fa fa-twitter"></a>
                                           <a href="#" class="fa fa-linkedin"></a>
                                           <a href="#" class="fa fa-instagram"></a>
                                           <a href="#" class="fa fa-skype"></a>
                                           <a  href="#" class="fa fa-whatsapp"></a>
-                                          <a href="#" class="fa fa-embed"></a>                            
-                                        </span>  
+                                          <a href="#" class="fa fa-embed"></a>                             
+                                        </span>   
                                       </div>
                                 </div>
                             </div>
@@ -575,25 +577,25 @@
                                                       </div>
                                                     </div>
                                                    </form>                              
-                                                </span>  
-                                              </div>  
+                                                </span>   
+                                              </div>   
                                           <a href="#" class="fa fa-facebook"></a>
                                           <a href="#" class="fa fa-twitter"></a>
                                           <a href="#" class="fa fa-linkedin"></a>
                                           <a href="#" class="fa fa-instagram"></a>
                                           <a href="#" class="fa fa-skype"></a>
                                           <a  href="#" class="fa fa-whatsapp"></a>
-                                          <a href="#" class="fa fa-embed"></a>                            
-                                        </span>  
+                                          <a href="#" class="fa fa-embed"></a>                             
+                                        </span>   
                                       </div>
                                 </div>
                             </div>
                     </div>
-                </div>                
+                </div>                 
             </div>
         </div>
     </div>
- 
+  
   <style>
     div#apply_all{
             background: gray;
@@ -616,23 +618,15 @@
     }    
     </style>
     <!-- job_listing_area_end  -->
-    <div id="apply_all" class="container" >
-       
+    <div id="apply_all" class="container" style="display: none;">
+        
         <div class="row">
-<div class="div col-md-3">
-<div id="general">
-<i>
-<span class="counter" style="color:#fff;"> </span>
-</i>
-</div>
-</div>
-<div class="div col-md-3">
-                <button class="apply_all"><input type="checkbox" id="select_all" /> Select All</button>
-            </div>
             <div class="div col-md-3">
                 <button class="apply_all">Apply Selected</button>
             </div>
-           
+            <div class="div col-md-3">
+                <button class="apply_all">Cancel</button>
+            </div>
         </div>
     </div>
 
@@ -670,50 +664,26 @@
 <script src="./static/js/front.js"></script>
 
 <script>
-
   $(document).ready(function(){
-    $('#select_all').on('click',function(){
-        if(this.checked){
-            $('.applyall').each(function(){
-                this.checked = true;
-
-            });
-        }else{
-             $('.applyall').each(function(){
-                this.checked = false;
-            });
-        }
-fnUpdateCount();
-    });
-   $('.applyall').on('click',function(){
-        if($('.applyall:checked').length == $('.applyall').length){
-            $('#select_all').prop('checked',true);
-        }else{
-            $('#select_all').prop('checked',false);
-        }
-fnUpdateCount();
-    });
-
-
-/////////////////Count Function/////////////////////////////
-
-
-$('#general i .counter').text(' selected count');
-var fnUpdateCount = function() {
-var generallen = $(".applyall:checked").length;
-if (generallen > 0) {
-$("#general i .counter").text('selected count (' + generallen + ')');
-} else {
-$("#general i .counter").text(' ');
-}
-};
+      $('#applyall').click(function(){
+        var checkbox=$('#applyall');
+          $("#apply_all").css("display", "block");
+          //alert('....................................?');
+      })
+  })
+  $(document).ready(function(){
+      $('#applyall1').click(function(){
+        var checkbox=$('#applyall1');
+          $("#apply_all").css("display", "block");
+          //alert('....................................?');
+      })
   })
 
   $(document).ready(function(){
-    $("#shareit").mouseover(function(){
+    $("#shareit").mouseover(function(){ 
        $("#mypopup").show(1000);
     });
-    $("#mypopup").mouseleave(function(){
+    $("#mypopup").mouseleave(function(){ 
        $("#mypopup").hide(1000);
     });
   });
@@ -725,10 +695,10 @@ $("#general i .counter").text(' ');
   //   });
 
   $(document).ready(function(){
-    $("#shareit1").mouseover(function(){
+    $("#shareit1").mouseover(function(){ 
        $("#mypopup1").show(1000);
     });
-    $("#mypopup1").mouseleave(function(){
+    $("#mypopup1").mouseleave(function(){ 
        $("#mypopup1").hide(1000);
     });
   });
@@ -745,110 +715,108 @@ $("#general i .counter").text(' ');
 </body>
 <style>
 
-    .sharejob{
-        margin-top: 10px;
-        margin-left: -130px;
-    }
-  /* Popup container - can be anything you want */
-  .popup,.popup2 {
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  .sharejob{
+      margin-top: 10px;
+      margin-left: -130px;
   }
+/* Popup container - can be anything you want */
+.popup,.popup2 {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  width: 50px;
+  height: 300px;
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 135%;
+  margin-left: -40px;
+  margin-bottom: -10px;
+  display: none;
+ 
+}
+.popup2 .popuptext2{
+  display: none;
+  width: 900px;
+  height: 600px;
+  background-color: black;
+  color: white;
   
-  /* The actual popup */
-  .popup .popuptext {
-    width: 50px;
-    height: 300px;
-    background-color: black;
-    color: #fff;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 135%;
-    margin-left: -40px;
-    margin-bottom: -10px;
-    display: none;
-   
-  }
-  .popup2 .popuptext2{
-    display: none;
-    width: 900px;
-    height: 600px;
-    background-color: black;
-    color: white;
-    
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    margin-top: -250px;
-    margin-left: -900px;
-  }
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  .popup2 .popuptext2::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popuptext a{
-    font-size: 25px;
-    color: white;
-    padding: 10px;
-    padding-left: 15px;
-    margin-top: 5px;
-  }
-  .popuptext .refer{
-    background: black;
-    color: white;
-    height: 40px;
-    margin-top: 5px;
-    border: none;
-  }
-  /* .popuptext .refer:hover{
-    background: yellow;
-    color: black;
-    height: 40px;
-  } */
-  
-  #email-form label{
-    color: black;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: -50px;
-  
-  }
-  #email-form input{
-    width: 80%;
-    height: 50px;
-    margin-top: -55px;
-    margin-left: 20px;
-  }
-  .row.main-search {
-      margin-top: 100px;
-  }
-  </style>
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: -250px;
+  margin-left: -900px;
+}
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup2 .popuptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popuptext a{
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.popuptext .refer{
+  background: black;
+  color: white;
+  height: 40px;
+  margin-top: 5px;
+  border: none;
+}
+/* .popuptext .refer:hover{
+  background: yellow;
+  color: black;
+  height: 40px;
+} */
+
+#email-form label{
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: -50px;
+
+}
+#email-form input{
+  width: 80%;
+  height: 50px;
+  margin-top: -55px;
+  margin-left: 20px;
+}
+.row.main-search {
+    margin-top: 100px;
+}
+</style>
 </html>
-
-
