@@ -619,22 +619,20 @@
     <div id="apply_all" class="container" >
        
         <div class="row">
-<div class="div col-md-3">
-<div id="general">
-<i>
-<span class="counter" style="color:#fff;"> </span>
-</i>
-</div>
-</div>
-<div class="div col-md-3">
-                <button class="apply_all"><input type="checkbox" id="select_all" /> Select All</button>
-            </div>
             <div class="div col-md-3">
-                <button class="apply_all">Apply Selected</button>
+                <div id="general">
+            <i><span class="counter" style="color:black; font-size: 20px; margin-left: 20px;"> </span> </i>
             </div>
-           
         </div>
-    </div>
+    <div class="div col-md-3">
+                    <button class="apply_all"><input type="checkbox" id="select_all" /> Select All</button>
+                </div>
+    <div class="div col-md-3">
+                    <button class="apply_all">Apply Selected</button>
+                </div>
+            
+            </div>
+        </div>
 
 </section>
 </div>
@@ -683,7 +681,7 @@
                 this.checked = false;
             });
         }
-fnUpdateCount();
+    fnUpdateCount();
     });
    $('.applyall').on('click',function(){
         if($('.applyall:checked').length == $('.applyall').length){
@@ -691,18 +689,18 @@ fnUpdateCount();
         }else{
             $('#select_all').prop('checked',false);
         }
-fnUpdateCount();
+    fnUpdateCount();
     });
 
 
 /////////////////Count Function/////////////////////////////
 
 
-$('#general i .counter').text(' selected count');
+$('#general i .counter').text(' ');
 var fnUpdateCount = function() {
 var generallen = $(".applyall:checked").length;
-if (generallen > 0) {
-$("#general i .counter").text('selected count (' + generallen + ')');
+    if (generallen > 0) {
+$("#general i .counter").text('Total (' + generallen + ')');
 } else {
 $("#general i .counter").text(' ');
 }
